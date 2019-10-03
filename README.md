@@ -1,3 +1,5 @@
+[![license BlueOak-1.0.0](https://badgen.net/badge/license/BlueOak-1.0.0)](LICENSE.md)
+
 # Keyv FS Sync
 
 A pretty simple filesystem based backend for Keyv.
