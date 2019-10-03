@@ -1,0 +1,22 @@
+{
+  "name": "keyv-fs-sync",
+  "version": "0.1.0",
+  "main": "src",
+  "license": "BlueOak-1.0.0",
+  "bugs": {
+    "url": "https://github.com/Beanow/keyv-fs-sync/issues"
+  },
+  "homepage": "https://github.com/Beanow/keyv-fs-sync",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "test": "ava --serial --no-cache --verbose test/index.js"
+  },
+  "devDependencies": {
+    "@keyv/test-suite": "^1.6.11",
+    "ava": "^2.4.0",
+    "keyv": "^3.1.0",
+    "memory-fs": "^0.4.1"
+  }
+}
