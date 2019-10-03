@@ -1,15 +1,22 @@
 kind: pipeline
+type: docker
 name: commit
 
 steps:
 - name: test_lts
   image: node:10
+  volumes:
+    - name: modules_lts
+      path: /drone/src/node_modules
   commands:
     - npm install
     - npm test
 
 - name: test_latest
   image: node:12
+  volumes:
+    - name: modules_latest
+      path: /drone/src/node_modules
   commands:
     - npm install
     - npm test
@@ -24,3 +31,9 @@ steps:
   when:
     branch:
       - master
+
+volumes:
+- name: modules_lts
+  temp: {}
+- name: modules_latest
+  temp: {}
