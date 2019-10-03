@@ -1,3 +1,4 @@
+[![Build Status](https://cloud.drone.io/api/badges/Beanow/keyv-fs-sync/status.svg)](https://cloud.drone.io/Beanow/keyv-fs-sync)
 [![license BlueOak-1.0.0](https://badgen.net/badge/license/BlueOak-1.0.0)](LICENSE.md)
 
 # Keyv FS Sync
