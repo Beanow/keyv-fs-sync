@@ -5,6 +5,8 @@ name: commit
 steps:
 - name: test_lts
   image: node:10
+  depends_on:
+    - clone
   volumes:
     - name: modules_lts
       path: /drone/src/node_modules
@@ -14,23 +16,14 @@ steps:
 
 - name: test_latest
   image: node:12
+  depends_on:
+    - clone
   volumes:
     - name: modules_latest
       path: /drone/src/node_modules
   commands:
     - npm install
     - npm test
-
-- name: publish
-  image: node:12
-  depends_on:
-    - test_lts
-    - test_latest
-  commands:
-    - echo "Ready for publishing"
-  when:
-    ref:
-      - refs/tags/v*
 
 volumes:
 - name: modules_lts
