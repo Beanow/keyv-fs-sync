@@ -1,0 +1,23 @@
+kind: pipeline
+name: commit
+
+steps:
+- name: test_lts
+  image: node:10
+  commands:
+  - npm install
+  - npm test
+
+- name: test_latest
+  image: node:12
+  commands:
+  - npm install
+  - npm test
+
+- name: publish
+  image: node:12
+  depends_on:
+  - test_lts
+  - test_latest
+  commands:
+  - echo "Ready for publishing"
