@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "main": "src",
   "license": "BlueOak-1.0.0",
+  "homepage": "https://github.com/Beanow/keyv-fs-sync",
   "bugs": {
     "url": "https://github.com/Beanow/keyv-fs-sync/issues"
   },
-  "homepage": "https://github.com/Beanow/keyv-fs-sync",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/Beanow/keyv-fs-sync.git"
+  },
   "engines": {
     "node": ">=10.0.0"
   },
