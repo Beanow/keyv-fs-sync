@@ -29,8 +29,8 @@ steps:
   commands:
     - echo "Ready for publishing"
   when:
-    branch:
-      - master
+    ref:
+      - refs/tags/v*
 
 volumes:
 - name: modules_lts
