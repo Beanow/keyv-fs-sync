@@ -18,5 +18,8 @@
     "ava": "^2.4.0",
     "keyv": "^3.1.0",
     "memory-fs": "^0.4.1"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.0"
   }
 }
